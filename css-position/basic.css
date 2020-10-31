@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
+.parent {
+    background-color: #19B5FE;
+    padding: 10px;
+    margin: 10px;
+}
+
+.child {
+
+}
+.child-one {
+    background-color: #26A65B;
+}
+
+.child-two {
+    background-color: #D24D57;
+}
+
+.child-three {
+    background-color: #F62459;
+}

@@ -1,0 +1,33 @@
+.blue {
+    color: blue;
+    color: rgba(123, 255, 0,1);
+    color: #000000ff;
+    color: hsla(0, 100%, 50%,0.5)
+}
+
+h1 {
+    color: green
+}
+
+/* #id.class.class2 {
+    color: red;
+} */
+
+/* 
+#id {
+    color: red;
+} */
+
+body {
+    /* color: red; */
+    font-size:100px;
+}
+
+.box {
+    height: 100px;
+    width: 1em;
+    padding: 20px;
+    margin: 50px;
+    border: 10px solid black;
+    background-color: red;
+}

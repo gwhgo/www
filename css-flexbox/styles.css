@@ -1,0 +1,44 @@
+.flexbox-container {
+    display: flex;
+    height: 800px;
+    background-color: yellow;
+
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* height: 2000px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start; */
+}
+
+.flexbox-item {
+    width: 500px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+}
+
+.flexbox-item-1 {
+    /* grow shrink basis */
+    flex : 1 0 0px;
+    min-height: 100px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    order: 3;
+}
+
+
+.flexbox-item-2 {
+    min-height: 200px;
+    flex-grow: 2;
+    flex-basis: 0;
+}
+
+.flexbox-item-3 {
+    min-height: 300px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+

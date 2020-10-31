@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS </title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            background-color: red;
+            height: 100px;
+        }
+
+        :root {
+            --hue: 100;
+        }
+
+        .container {
+            /* width: calc(100% - 30px);
+            margin: 0 auto; */
+
+            --width: 100px;
+            width: calc(var(--width) * 2);
+            margin: 0 auto;
+        }
+
+        .primary {
+            background-color: hsl(var(--hue), 100%, 50%);
+        }
+
+        .danger {
+            background-color: hsl(calc(var(--hue) - 180), 100%, 50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container"></div>
+    <button class="primary">Primary</button>
+    <button class="danger">Danger</button>
+</body>
+
+</html>

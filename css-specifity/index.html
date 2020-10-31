@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        /* inline-style, id, class, h1 */
+        /* 0,1,0,0 */
+        /* #header-id {
+            color: orange;
+        } */
+
+        /* 0,0,1,0 */
+        /* .header {
+            color: red;
+        } */
+
+        /* 0,0,1,1 */
+        h1.header {
+            color: red;
+        }
+
+        /* 1,0,1,0,0 */
+        #header-id {
+            color: black !important;
+        }
+
+        h1.header-2 {
+            color: green;
+        }
+
+        /* 1,0,0,0,0 */
+        .header-2 {
+            color: green !important;
+        }
+
+        /* 0,0,0,1 */
+        h1 {
+            color: blue;
+        }
+
+        .text {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="header-id" class="header header-2"> AMiner-Header</h1>
+    <p class="text">
+        AMiner Online Policy, you need to update : <br>
+    <ul>
+        <li>aminer.cn</li>
+        <li>aminer.org</li>
+    </ul>
+
+    When you update the website, you need to : <br>
+    <ol>
+        <li>build -> config/manifest.json and app/public</li>
+    </ol>
+    </p>
+</body>
+
+</html>

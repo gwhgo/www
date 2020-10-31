@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persudo</title>
+    <style>
+        /* ::before :after */
+
+        /* .required::before {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+        }
+
+        .required::after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: blue;
+        } */
+
+        .required::after {
+            content: "*";
+        }
+
+        [data-tooltip] {
+            position: relative;
+        }
+
+        [data-tooltip]:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            padding: 5px;
+            margin-top: 5px;
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <label class="required">Name</label>
+    <input type="text" required>
+    <button data-tooltip="Tooltip">Submit Form</button>
+</body>
+
+</html>
