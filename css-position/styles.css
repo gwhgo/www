@@ -4,8 +4,7 @@
 }
 
 .child-one {
-    /* position: relative;
-    top: 0px; */
+    /* position: absolute; */
 
     /* position: absolute;
     top: 0px; */
@@ -14,6 +13,6 @@
     top:0;
     right:0; */
 
-    /* position: sticky;
-    top:0; */
+    position: sticky;
+    top:0;
 }

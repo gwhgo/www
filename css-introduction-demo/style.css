@@ -1,0 +1,23 @@
+.blue {
+    color: #000fff;
+}
+
+/* This will be overrided by the .blue class */
+h1 {
+    color: red;
+}
+
+/* this will affect the <p> in <body> */
+body {
+    color: red;
+}
+
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin: 100px;
+    padding: 10px;
+    border: 10px solid black;
+}
